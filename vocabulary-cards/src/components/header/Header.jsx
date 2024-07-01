@@ -1,6 +1,8 @@
+import './header.css'
+
 function Header () {
     return (
-        <header>
+        <header className='header'>
             your vocabulary to learn
         </header>
     )
