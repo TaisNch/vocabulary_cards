@@ -1,11 +1,12 @@
-import './card.css'
+import './TableLine.css'
 
-function Card () {
+
+function TableLine (props) {
     return(
         <div className='card'>
-            <p>111</p>
-            <p>111</p>
-            <p>111</p>
+            <p className='cell'>{props.word}</p>
+            <p className='cell'>{props.transcription}</p>
+            <p className='cell'>{props.translate}</p>
         <div className='checkbox'>
         <input type="checkbox"></input>
         <label> learned  </label>
@@ -18,4 +19,4 @@ function Card () {
     )
 }
 
-export default Card;
+export default TableLine;

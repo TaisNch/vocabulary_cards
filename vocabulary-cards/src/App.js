@@ -1,19 +1,26 @@
 import './App.css';
 import Header from './components/header/Header';
-import List from './components/list/List';
-import Card from './components/card/Card';
-import AddWord from './components/addWord/AddWord';
+import TableTitle from './components/TableTitle/TableTitle';
+import TableLine from './components/TableLine/TableLine';
+import AddWord from './components/AddWord/AddWord';
+import data from './data.json';
 
 function App() {
   return (
     <div className='App'>
- <Header/>
- <List/>
- <Card/>
- <AddWord/>
-    </div>
-   
-      );
+      <Header/>
+      <TableTitle/>
+      <AddWord/>
+       {data.map((item) => (
+          <TableLine
+                key = {item.id}    
+                word={item.word}
+                transcription={item.transcription}
+                translate={item.translate}
+                                 />
+                             ))}
+      </div>
+         );
 }
 
 export default App;

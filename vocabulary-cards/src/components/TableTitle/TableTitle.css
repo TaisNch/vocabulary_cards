@@ -1,0 +1,22 @@
+.list {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.list__words {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:70%;
+}
+
+.list__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width:30%;
+}
+

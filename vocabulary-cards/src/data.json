@@ -1,0 +1,31 @@
+[
+    {"id":"1",
+"word": "cat",
+"transcription": "kæt",
+"translate": "кошка"
+}
+,
+{"id":"2",
+"word": "Word",
+"transcription": "wɜːrd",
+"translate": "слово"
+}
+,
+{"id":"3",
+"word": "Dog",
+"transcription": "dɔːɡ",
+"translate": "собака, пес"
+}
+,
+{"id":"4",
+"word": "Cow",
+"transcription": "kaʊ",
+"translate": "корова"
+}
+,
+{"id":"5",
+"word": "Butterfly",
+"transcription": "Butterfly",
+"translate": "бабочка, мотылек"
+}
+]

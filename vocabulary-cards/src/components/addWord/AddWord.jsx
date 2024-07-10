@@ -1,4 +1,4 @@
-import './addWord.css'
+import './AddWord.css'
 
 function AddWord (){
     return (
