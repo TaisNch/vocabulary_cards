@@ -1,18 +1,17 @@
 import './TableLine.css'
 
-
 function TableLine (props) {
+    const style = props.styles
     return(
-        <div className='card'>
-            <p className='cell'>{props.word}</p>
-            <p className='cell'>{props.transcription}</p>
-            <p className='cell'>{props.translate}</p>
+        <div className='line'>
+         <p className='line__cell'>{props.word}</p>
+         <p className='line__cell'>{props.transcription}</p>
+         <p className='line__cell'>{props.translate}</p>
         <div className='checkbox'>
         <input type="checkbox"></input>
         <label> learned  </label>
          </div>   
-            
-        <button>
+         <button>
             delete
         </button>
         </div>

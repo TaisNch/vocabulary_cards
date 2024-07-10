@@ -1,10 +1,10 @@
-.card {
+.line {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border: 1px solid black;
 }
-.cell {
+.line__cell {
     border: 1px solid black;
     width: 30%;
 }
