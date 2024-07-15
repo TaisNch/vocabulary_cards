@@ -11,3 +11,11 @@
      text-align: center;
    
 }
+
+.card__button {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
