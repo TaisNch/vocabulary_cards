@@ -1,41 +1,36 @@
 import './App.css';
-import Header from './components/header/Header';
-import TableTitle from './components/TableTitle/TableTitle';
-import TableLine from './components/TableLine/TableLine';
-import AddWord from './components/AddWord/AddWord';
-import Card from './components/Card/Card';
-import data from './data.json';
+import Home from './components/Home';
+import Table from './components/Table';
+import AllCards from './components/AllCards';
+import { Router, Routes, Route, Link} from "react-router-dom";
 
 function App() {
   return (
+   <Router>
+  <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/table">Table</Link>
+            </li>
+            <li>
+              <Link to="/cards">Cards</Link>
+            </li>
+          </ul>
+        </nav>
+</div>
+
     <div className='App'>
-      <Header/>
-      <h2>Таблица слов</h2>
-      <TableTitle/>
-      <AddWord/>
-       {data.map((item) => (
-          <TableLine
-                key = {item.id}    
-                word={item.word}
-                transcription={item.transcription}
-                translate={item.translate}
-                                  />
-                             ))}
-      
-      <h2>Карточки со словами</h2>
-     <div className='cards'>
-           {data.map((item) => (
-          <Card
-                key={item.id}    
-                word={item.word}
-                transcription={item.transcription}
-                translate={item.translate}
-                                 />
-                             ))}
+     <Routes>
+      <Route  path = "/" element = {<Home/>}/>
+      <Route path="/table"  element = {<Table/>}/>
+      <Route path="/cards"  element = {<AllCards/>}/>
+     </Routes>
      </div>
-      
-                             
-      </div>
+  </Router>
          );
 }
 
