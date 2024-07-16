@@ -1,35 +1,27 @@
 import './App.css';
-import Home from './components/Home';
+import Header from './components/header/Header';
 import Table from './components/Table';
 import AllCards from './components/AllCards';
-import { Router, Routes, Route, Link} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,} from "react-router-dom";
 
 function App() {
   return (
-  <Router>
-  {/* <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/table">Table</Link>
-            </li>
-            <li>
-              <Link to="/cards">Cards</Link>
-            </li>
-          </ul>
-        </nav>
-</div> */}
-    <div className='App'>
-     <Routes>
-      <Route  path = "/" element = {<Home/>}/>
-      {/* <Route path="/table"  element = {<Table/>}/>
-      <Route path="/cards"  element = {<AllCards/>}/> */}
-     </Routes>
-     </div>
-  </Router>
+    <Router>
+{/* <div>
+    <nav>
+    <ul>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      </ul>
+      </nav>
+    </div> */}
+      <Routes>
+      <Route path="/" element={<Header/>} />
+      <Route path="/table" element={<Table/>} />
+      <Route path="/cards" element={<AllCards/>} />
+       </Routes>
+      </Router>
 
          );
 }

@@ -1,10 +1,12 @@
-import Card from './Card/Card'
-import './Card/Card.css'
+import Header from './header/Header';
+import Card from './Card/Card';
+import './Card/Card.css';
 import data from '../data.json';
 
 function AllCards () {
     return (
-    <div>
+      <div>
+         <Header/>
  <h2> Карточки слов</h2>
    <div className='cards'>
      { data.map((item) => (
