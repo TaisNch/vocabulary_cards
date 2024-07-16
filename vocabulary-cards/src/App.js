@@ -6,8 +6,8 @@ import { Router, Routes, Route, Link} from "react-router-dom";
 
 function App() {
   return (
-   <Router>
-  <div>
+  <Router>
+  {/* <div>
         <nav>
           <ul>
             <li>
@@ -21,16 +21,16 @@ function App() {
             </li>
           </ul>
         </nav>
-</div>
-
+</div> */}
     <div className='App'>
      <Routes>
       <Route  path = "/" element = {<Home/>}/>
-      <Route path="/table"  element = {<Table/>}/>
-      <Route path="/cards"  element = {<AllCards/>}/>
+      {/* <Route path="/table"  element = {<Table/>}/>
+      <Route path="/cards"  element = {<AllCards/>}/> */}
      </Routes>
      </div>
   </Router>
+
          );
 }
 

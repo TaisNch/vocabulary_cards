@@ -1,12 +1,12 @@
 import './TableLine.css'
 
-function TableLine (props) {
-    const style = props.styles
+function TableLine (allCells) {
+    const  {word, transcription, translate}= allCells;
     return(
         <div className='line'>
-         <p className='line__cell'>{props.word}</p>
-         <p className='line__cell'>{props.transcription}</p>
-         <p className='line__cell'>{props.translate}</p>
+         <p className='line__cell'>{word}</p>
+         <p className='line__cell'>{transcription}</p>
+         <p className='line__cell'>{translate}</p>
         <div className='checkbox'>
         <input type="checkbox"></input>
         <label> learned  </label>
