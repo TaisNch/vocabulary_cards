@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/header/Header';
 import Table from './components/Table';
 import AllCards from './components/AllCards';
+import Page404 from './components/Page404/Page404'
 import { BrowserRouter as Router, Routes, Route,} from "react-router-dom";
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
       <Route path="/" element={<Header/>} />
       <Route path="/table" element={<Table/>} />
       <Route path="/cards" element={<AllCards/>} />
-       </Routes>
+      <Route path="*" element={<Page404/>} />
+      </Routes>
       </Router>
 
          );
