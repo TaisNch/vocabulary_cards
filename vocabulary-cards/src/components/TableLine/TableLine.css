@@ -1,8 +1,15 @@
+* {
+    font-family: "Gupter", serif;
+    font-style: normal; 
+}
+
+
 .line {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border: 1px solid black;
+  
 }
 .line__cell {
     border: 1px solid black;

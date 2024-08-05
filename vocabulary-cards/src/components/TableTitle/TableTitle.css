@@ -1,3 +1,9 @@
+* {
+    font-family: "Gupter", serif;
+    font-style: normal; 
+}
+
+
 .list {
     border: 1px solid black;
     display: flex;
