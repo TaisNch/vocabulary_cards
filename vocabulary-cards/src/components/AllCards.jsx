@@ -14,6 +14,13 @@ function AllCards () {
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex === data.length - 1 ? 0 : prevIndex + 1));
   };
+
+   const [wordsLearned, setWordsLearned] = useState(0);
+  
+    const handleWordLearned = () => {
+      setWordsLearned(prevCount => prevCount + 1);
+    };
+
   return (
       <div>
          <Header/>
@@ -21,6 +28,7 @@ function AllCards () {
  <button onClick={handlePrev}> previous </button>
    <div className='cards'>
           <Card
+             onLearned={handleWordLearned}
              key={data[currentIndex].id}    
              word={data[currentIndex].word}
              transcription={data[currentIndex].transcription}
@@ -28,6 +36,7 @@ function AllCards () {
                               />
                                           </div>
         <button onClick={handleNext}> next </button>
+       <p>words learned: {wordsLearned} </p> 
     </div>
    
       )
