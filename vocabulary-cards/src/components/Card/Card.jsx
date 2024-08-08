@@ -1,5 +1,5 @@
 import './Card.css';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import data from '../../data.json'
 
 function Card({ onLearned }) {
@@ -14,12 +14,20 @@ const handleShowTranslation = () => {
     }
   };
 
+  const buttonRef = useRef(null);
+
+  useEffect(() => {
+    if (buttonRef.current) {
+      buttonRef.current.focus();
+    }
+  }, []);
+
 return (
 <div className='card'>
 <p className='card__line'>{data.word}</p>
 <p className='card__line'>{data.transcription}</p>
 <p className={`card__line trslt ${isActive ? '' : 'hide'}`}>{data.translate}</p>
-<button className='card__button' onClick={handleShowTranslation}>
+<button className='card__button' ref={buttonRef} onClick={handleShowTranslation}>
 {isActive ? 'Hide Translation' : 'Show Translation'}
 </button>
 </div>
