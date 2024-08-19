@@ -29,7 +29,7 @@ function AllCards () {
    <div className='cards'>
           <Card
              onLearned={handleWordLearned}
-             key={data[currentIndex].id}    
+            //  key={data[currentIndex].id}    
              word={data[currentIndex].word}
              transcription={data[currentIndex].transcription}
              translate={data[currentIndex].translate}
