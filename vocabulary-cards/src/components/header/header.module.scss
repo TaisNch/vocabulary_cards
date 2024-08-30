@@ -1,0 +1,44 @@
+@import "../../styles/vars.scss";
+
+.header {
+	text-align: center;
+	font-size: 2000;
+	font-family: "Gupter", serif;
+	height: 10vh;
+	font-style: normal;
+	color: $text-color;
+}
+// .logo {
+// 	display: flex;
+// 	justify-content: start;
+// 	// align-content: center;
+// }
+.logo__img {
+	width: 3vw;
+	height: 3vh;
+	border-radius: 40px;
+	padding: 1rem;
+	margin-right: 30%;
+	cursor: "pointer";
+	position: absolute;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+	background-color: $header-background-color;
+	height: 5vh;
+	border-radius: 10px;
+	align-items: center;
+	margin-bottom: 1%;
+}
+
+.nav__link {
+	text-decoration: none;
+	background-color: $header-background-color;
+	color: $text-color;
+	cursor: pointer;
+	font-size: 1.8em;
+	}
+

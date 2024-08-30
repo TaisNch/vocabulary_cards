@@ -1,6 +1,8 @@
+@import '../../styles/vars.scss';
 * {
     font-family: "Gupter", serif;
     font-style: normal; 
+    background-color: $body-background-color;
 }
 
 
@@ -19,10 +21,22 @@
     width:70%;
 }
 
+.list__words_title{
+    color: $text-color;
+   }
+
+
+
 .list__buttons {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    gap: 15px;
     width:30%;
 }
+
+.list__buttons_title{
+    color: $text-color;
+    font-size: small;
+   }
 

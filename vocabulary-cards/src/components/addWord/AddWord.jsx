@@ -1,4 +1,4 @@
-import './AddWord.css'
+import './AddWord.scss'
 import { useState } from 'react';
 
 function AddWord (){
@@ -59,21 +59,21 @@ function AddWord (){
          <input  className={errors.word ? 'inputError' : ''} placeholder = 'введите слово' value={word} type="text" 
           onChange={(e) => { setWord(e.target.value); handleInputChange(); }} />
            {errors.word && <p className='errorText'>{errors.word}</p>}
-           </div>
-           <div className='inputWrapper'>
+      </div>
+      <div className='inputWrapper'>
          <input  className={errors.transcription ? 'inputError' : ''}
          placeholder = 'введите транскрипцию' value={transcription} type="text"
          onChange={(e) => { setTranscription(e.target.value); handleInputChange(); }} />
            {errors.transcription && <p className='errorText'>{errors.transcription}</p>}
-           </div>
-           <div className='inputWrapper'>
+      </div>
+      <div className='inputWrapper'>
          <input  className={errors.translation ? 'inputError' : ''}
          placeholder = 'введите перевод' value={translation}  type="text"
          onChange={(e) => { setTranslation(e.target.value); handleInputChange(); }} />    
           {errors.translation && <p className='errorText'>{errors.translation}</p>} 
-          </div>
+      </div>
        </form>
-          <div className='addWord__btns'>
+      <div className='addWord__btns'>
           <button onClick={handleAddWord} disabled={isButtonDisabled}>add word</button>
           <button>delete</button>
         </div>
