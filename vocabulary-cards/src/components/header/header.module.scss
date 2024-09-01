@@ -2,23 +2,16 @@
 
 .header {
 	text-align: center;
-	font-size: 2000;
+	font-size: 3.5em;
 	font-family: "Gupter", serif;
-	height: 10vh;
 	font-style: normal;
 	color: $text-color;
 }
-// .logo {
-// 	display: flex;
-// 	justify-content: start;
-// 	// align-content: center;
-// }
+
 .logo__img {
-	width: 3vw;
-	height: 3vh;
+	width: 5vw;
+	height: 5vh;
 	border-radius: 40px;
-	padding: 1rem;
-	margin-right: 30%;
 	cursor: "pointer";
 	position: absolute;
 }

@@ -1,0 +1,57 @@
+* {
+  font-family: "Gupter", serif;
+  font-style: normal;
+  background-color: rgb(237, 234, 228);
+}
+
+.line_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-between;
+  border: 1px solid rgb(207, 198, 196);
+  border-radius: 5px;
+}
+
+.line.highlighted {
+  background-color: #d4edda;
+}
+
+.line__cell {
+  border: 1px solid rgb(207, 198, 196);
+  width: 30%;
+  color: rgb(26, 43, 60);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.linebtns {
+  width: 12%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.linebtns__right .linebtns__basket {
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.linebtns__right_img {
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.linebtns__basket_img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+}/*# sourceMappingURL=TableLine.module.css.map */

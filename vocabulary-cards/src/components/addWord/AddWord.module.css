@@ -1,0 +1,78 @@
+.addWord {
+  border: 2px solid rgb(213, 178, 169);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.title__addwords {
+  color: rgb(26, 43, 60);
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.addWord__form {
+  display: flex;
+  flex-direction: row;
+}
+
+.addWord__inputs {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(207, 198, 196);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.inputWrapper {
+  width: 30%;
+  color: rgb(26, 43, 60);
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid rgb(213, 178, 169);
+}
+
+.inputWrapper_item {
+  border: none;
+}
+
+.addWord__btns {
+  width: 12%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.addWord__btns_add,
+.addWord__btns_delete {
+  border: 1px solid rgb(213, 178, 169);
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: rgb(26, 43, 60);
+}
+
+.info__addwords {
+  color: rgb(26, 43, 60);
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.info__addwords-link {
+  text-decoration: none;
+  color: rgb(26, 43, 60);
+  cursor: pointer;
+}
+
+.errorText {
+  color: red;
+}
+
+.inputError {
+  border: 2px solid red;
+  outline: none;
+}/*# sourceMappingURL=AddWord.module.css.map */
