@@ -1,16 +1,17 @@
 import style from "./TableLine.module.scss";
 import { useState } from "react";
 
-function TableLine(allCells) {
-	const { word, transcription, translate } = allCells;
+function TableLine({ word, transcription, translate }) {
 	const [isRemoved, setIsRemoved] = useState(false);
 	const [isHighlighted, setIsHighlighted] = useState(false);
 
 	const handleRemove = () => {
 		setIsRemoved(true);
+		// onRemove();
 	};
 	const handleHighlight = () => {
 		setIsHighlighted(true);
+		// onHighlight();
 	};
 
 	if (isRemoved) {

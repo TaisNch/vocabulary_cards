@@ -6,12 +6,7 @@
 }
 
 
-.cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-weight: 800;
-     }
+
 
 .card {
     font-weight: 400;
@@ -19,18 +14,30 @@
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
-    border: 1px solid black;
-    width: 25%;
+    align-items: center;
+    border: 2px solid $header-background-color; 
+    border-radius: 5px;
+    width: 80%;
 }
 
 .card__line {
-     text-align: center;
+     text-align: center; 
+     border: 2px solid $line-color; 
+     border-radius: 5px;
+     width: 80%;
+
        
 }
 
 .card__button {
     font-weight: 400;
     text-align: center;
+    border: 2px solid $line-color; 
+    background-color:$header-background-color ;
+    border-radius: 5px;
+    width: 80%;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .hide {

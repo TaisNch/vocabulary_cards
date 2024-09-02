@@ -29,7 +29,7 @@ function Card({ word, transcription, translate, onLearned }) {
 			<p
 				className={`${style.card__line} ${style.trslt} ${
 					isActive ? "" : style.hide
-				}}`}>
+				}`}>
 				{translate}
 			</p>
 			<button

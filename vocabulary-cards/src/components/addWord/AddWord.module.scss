@@ -64,8 +64,10 @@
 	margin-bottom: 10px;
 }
 
-.info__addwords-link {
-	text-decoration: none;
+.info__addwords_link {
+	padding-left: 3px;
+    text-decoration: none;
+    font-weight: bold;
 	color: $text-color;
 	cursor: pointer;
 }

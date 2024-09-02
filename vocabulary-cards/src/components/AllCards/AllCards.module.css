@@ -1,0 +1,41 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  font-weight: 800;
+  width: 50%;
+}
+
+.allcards__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.allcards__title {
+  color: rgb(26, 43, 60);
+  text-align: center;
+  margin: 0;
+}
+
+.style.paragraph {
+  color: rgb(26, 43, 60);
+  margin-bottom: 3%;
+}
+
+.allcards__bntprev,
+.allcards__bntnext {
+  border-radius: 30px;
+  height: 100%;
+  border: 2px solid rgb(213, 178, 169);
+  background-color: rgb(213, 178, 169);
+  cursor: pointer;
+}
+
+.allcards__count {
+  color: rgb(26, 43, 60);
+  text-align: center;
+  margin-top: 3%;
+}/*# sourceMappingURL=AllCards.module.css.map */

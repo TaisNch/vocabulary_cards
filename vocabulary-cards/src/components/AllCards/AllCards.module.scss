@@ -1,0 +1,43 @@
+@import "../../styles/vars.scss";
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	text-align: center;
+	font-weight: 800;
+  width: 50%;
+}
+
+.allcards__wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+  align-items: center;
+}
+
+.allcards__title {
+	color: $text-color;
+	text-align: center;
+	margin: 0;
+}
+
+.style.paragraph {
+	color: $text-color;
+	margin-bottom: 3%;
+}
+
+.allcards__bntprev,
+.allcards__bntnext {
+	border-radius: 30px;
+	height: 100%;
+  border: 2px solid $header-background-color; 
+  background-color:$header-background-color ;
+  cursor: pointer;
+}
+
+.allcards__count {
+  color: $text-color;
+  text-align: center;
+	margin-top: 3%;
+}

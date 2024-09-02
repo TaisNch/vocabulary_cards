@@ -4,7 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Home from './components/Home/Home';
 import Table from './components/Table';
-import AllCards from './components/AllCards';
+import AllCards from './components/AllCards/AllCards';
 import Page404 from './components/Page404/Page404'
 import { BrowserRouter as Router, Routes, Route,} from "react-router-dom";
 

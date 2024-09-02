@@ -1,7 +1,7 @@
 import style from "./AddWord.module.scss";
 import { useState } from "react";
 
-function AddWord() {
+function AddWord({ onAddWord }) {
 	const [word, setWord] = useState("");
 	const [transcription, setTranscription] = useState("");
 	const [translation, setTranslation] = useState("");
@@ -144,8 +144,8 @@ function AddWord() {
 				</div>
 			</div>
 			<div className={style.info__addwords}>
-				(*)FYI - All the words will be added to the table belows and also to the
-				<a className="info__addwords-link" href="cards">
+				(*)FYI - All the words will be added to the table below and also to the
+				<a className={style.info__addwords_link} href="cards">
 					Cards
 				</a>
 			</div>
